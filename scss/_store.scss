@@ -148,13 +148,15 @@
 
 
 .pc-store-wrap{
+    position:sticky;
+    top: 60px;
     @include pc{
         border-right: 1px rgb(226, 219, 219) solid;
         border-bottom: 1px rgb(226, 219, 219) solid;
         position: sticky;
         left: 0;
         width: 20%;
-        top:10%;
+        top:12%;
         height: 80vh;
         overflow-y: scroll;
     }
@@ -165,6 +167,7 @@
     display: flex;
     overflow: auto;
     border-bottom: 1px rgb(218, 207, 207) solid;
+    background: white;
     @include ipad-pro{
         justify-content: space-between;
     }
@@ -175,7 +178,7 @@
     }
 
     .store-first{
-        background: rgb(252, 252, 252);
+        width: 100%;
         @include pc{
             width: 100%;
         }
