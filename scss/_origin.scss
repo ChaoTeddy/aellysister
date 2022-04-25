@@ -32,7 +32,7 @@
 }
 
 .origin-introduce{
-    font-family: $motif-ff2;
+    font-family: "微軟正黑體";
     line-height: 24px;
     margin-top: 20px;
     @include pc{
@@ -47,14 +47,14 @@
     background: linear-gradient(to bottom,white,$motif-color1);
     color: black;
     .onlinetime-title{
-        font-size: $motif-fz2;
-        font-weight: bold;
+        font-size: "微軟正黑體";
     }
     .onlinetime-title-english{
         margin-top: 10px;
         font-size: $motif-fz1;
-        font-family: $motif-ff2;
+        font-family: "微軟正黑體";
         position: relative;
+        font-weight: bold;
         &::before{
             content: "";
             position: absolute;
@@ -92,17 +92,27 @@
     }
     .onlinetime-inner{
         margin-top: 10%;
-        font-family: $motif-ff3;
+        font-family: "微軟正黑體";
         font-size: 16px;
         font-weight: bold;
+        @include ipad-pro{
+            font-size: 18px;
+        }
         @include pc{
             margin-top: 50px;
+            font-size: 20px;
         }
     }
     .onlinetime-inner-time{
         margin-top: 5px;
         font-weight: bold;
-        font-family: $motif-ff3;
+        font-family: "微軟正黑體";
+        @include ipad-pro{
+            font-size: 18px;
+        }
+        @include pc{
+            font-size: 20px;
+        }
     }
 }
 
@@ -116,7 +126,7 @@
     }
     p{
         margin-top: 50px;
-        font-family: $motif-ff3;
+        font-family: "微軟正黑體";
         font-weight: bold;
         font-size: $motif-fz2;
         // color: darkgray;
