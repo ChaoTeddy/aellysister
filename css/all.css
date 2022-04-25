@@ -162,7 +162,6 @@ img {
   font-size: 27px;
   background: transparent;
   border: none;
-  margin-left: 10px;
 }
 
 .menubar-box .menubar-search-wrap button:active {
@@ -301,8 +300,8 @@ img {
   bottom: 0;
   right: 0;
   left: 0;
-  background: rgba(255, 255, 255, 0.9);
-  height: 100vh;
+  background: white;
+  height: 90vh;
   display: none;
   overflow-y: scroll;
   padding-bottom: 15%;
