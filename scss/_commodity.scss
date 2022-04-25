@@ -1,0 +1,334 @@
+
+.commodity-wrap-important{
+    display: flex;
+    flex-direction: column;
+    @include pc{
+        flex-direction: row;
+        padding-top: 90px;
+    }
+}
+.commodity-all-wrap{
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0px;
+    @include pc{
+        width: 20%;
+        padding: 0;
+    }
+}
+
+
+.commodity-pc-store-wrap{
+    @include pc{
+        border-right: 1px rgb(226, 219, 219) solid;
+        border-bottom: 1px rgb(226, 219, 219) solid;
+        position: sticky;
+        left: 0;
+        width: 100%;
+        top:10%;
+        height: 80vh;
+        overflow-y: scroll;
+    }
+}
+
+
+.commodity-wrap{
+    padding: 0 10px;
+    @include pc{
+        max-width: 80%;
+        padding: 0 20px;
+    }
+}
+
+
+
+
+.commodity-main{
+    display: flex;
+    flex-direction: column;
+    @include ipad-pro{
+        align-items: center;
+        width: 100%;
+    }
+    @include pc{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .introduction{
+        display: block;
+        border: 1px $commodity-border solid;
+        color: rgb(61, 59, 59);
+        font-family: $motif-ff2;
+        padding: 10px 0;
+        margin: 5px 0;
+        text-align: center;
+        @include ipad-pro{
+            width: 70%;
+        }
+        @include pc{
+            text-align: left;
+            border: none;
+            line-height: 30px;
+            font-size: $motif-fz1;
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
+.commodity-main-form{
+    @include ipad-pro{
+        width: 90%;
+    }
+    @include pc{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border: 1px $commodity-border solid;
+        width: 40%;
+        align-self: stretch;
+        justify-content: space-around;
+        padding: 10px;
+    }
+    .introduction{
+        width: 100%;
+        @include pc{
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.pc-main-inner{
+    @include pc{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+    }
+}
+.introduction-fz-s{
+    font-size: 14px;
+    letter-spacing: 5px;
+    @include ipad-pro{
+        max-width: 100%;
+    }
+}
+
+.commodity-price{
+    display: block;
+    font-family: $motif-ff2;
+    font-weight: bold;
+    margin: 20px 0;
+    font-size: $motif-fz1;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -8px;
+        height: 1px;
+        background-color: $c-color-black;
+        @include pc{
+            display: none;
+        }
+    }
+    @include pc{
+        margin: 0;
+        font-size: $motif-fz2;
+    }
+}
+
+.commodity-main-imgwrap{
+    width:100%;
+    height: 380px;
+    border: 1px $commodity-border solid;
+    @include ipad-pro{
+        max-width: 90%;
+    }
+    @include pc{
+        max-width: 40%;
+        height: auto;
+        padding: 20px;
+        // border: none;
+    }
+    img{
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+
+// 顏色選擇
+.commodity-form-wrap{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    @include pc{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+}
+.color-select{
+    display: inline-block;
+    margin-bottom: 10px;
+    input{
+        opacity: 0;
+    }
+}
+.color-box{
+    padding: 10px;
+    cursor: pointer;
+    &.active{
+        border: 1px black solid;
+    }
+}
+.colorbox-option1,.colorbox-option2,.colorbox-option3{
+    width: 25px;
+    height: 25px;
+    display: block;
+}
+// .colorbox-option1{
+//     background: $c-color-gray;
+// }
+// .colorbox-option2{
+//     background: $c-color-black;
+// }
+// .colorbox-option3{
+//     background: $c-color-khaki
+// }
+
+
+// 尺寸選擇
+.size-select{
+    display: inline-block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    @include pc{
+        margin-bottom: 30px;
+        margin-right: 20px;
+    }
+    input{
+        opacity: 0;
+    }
+}
+.size-box{
+    border: 1px $commodity-border solid;
+    font-family: $motif-ff3;
+    font-weight: bold;
+    font-size: $motif-fz1;
+    span{
+        width: 45px;
+        height: 45px;
+        display: block;
+        line-height: 45px;
+        text-align: center;
+    }
+    &.active{
+        background: $motif-color1;
+    }
+}
+
+
+//數量選擇 
+.number-choose{
+    margin-bottom: 10px;
+    input{
+        text-align: center;
+        font-size: $motif-fz1;
+        border: 1px $commodity-border solid;
+        @include pc{
+            width: 20%;
+            padding: 10px 0;
+            font-size: $motif-fz2;
+        }
+    }
+    @include pc{
+        margin-bottom: 30px;
+    }
+}
+
+
+// 表單submit
+.order-submit{
+    border: 1px $commodity-border solid;
+    background: none;
+    border-radius: 5px;
+    padding: 10px 0;
+    font-family: $motif-ff2;
+    margin-bottom: 20px;
+    &:hover{
+        background: $motif-color1;
+    }
+    @include pc{
+        margin: 0;
+        padding: 20px 0;
+        width: 100%;
+        font-size: $motif-fz1;
+        align-self: flex-start;
+        &:active{
+            box-shadow: 1px 1px 5px $commodity-border;
+        }
+    }
+}
+
+
+
+
+// 單一商品介紹區
+.detail-wrap{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    @include ipad-pro{
+        align-items: center;
+    }
+    @include pc{
+        width: 100%;
+        align-self: center;
+        border: 1px $commodity-border solid;
+        margin: 30px 0;
+        text-align: center;
+        padding: 20px;
+    }
+}
+.datail-illustrate{
+    display: flex;
+    flex-direction: column;
+    color: $c-color-black;
+    font-family: $motif-ff3;
+    margin-bottom: 20px;
+    @include pc{
+        margin-bottom: 0;
+    }
+    li{
+        margin: 5px 0;
+    }
+    .dark-datail{
+        color: darkred;
+    }
+}
+.datail-img{
+    @include pc{
+        margin-top: 50px;
+    }
+    li{
+        width:100%;
+        height: 500px;
+        margin-bottom: 20px;
+        @include ipad-pro{
+            height: 600px;
+        }
+        @include pc{
+            height: 1024px;
+        }
+    }
+    img{
+        height: 100%;
+        object-fit: contain;
+    }
+}

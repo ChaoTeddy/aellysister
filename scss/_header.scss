@@ -1,0 +1,275 @@
+.wrap{
+    height: auto;
+    position: relative;
+}
+.header{
+    width: 100%;
+    background: $motif-color1;
+    padding:10px 5px;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    @include pc{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 5px;
+        background: rgba($color:$motif-color1, $alpha:0.9);
+    }
+}
+.menubar-box{
+    display: flex;
+    justify-content: space-between;
+    .menubar-search-wrap{
+        display: flex;
+        @include pc{
+            display: none;
+        }
+        button{
+            width: 40px;
+            height: 40px;
+            font-size: 27px;
+            background: transparent;
+            border: none;
+            margin-left: 10px;
+            &:active{
+                filter: drop-shadow(1px 1px 1px black );
+            }
+            @include pc{
+                display: none;
+            }
+        }
+    }
+    .menubar-search-box{
+        width: 40px;
+        height: 40px;
+        position: relative;
+        display: flex;
+        
+        .menu-border{
+            background: black;
+            position: absolute;
+            top: 50%;
+            left: 15%;
+            right: 15%;
+            height: 3%;
+            transform: scale(1);
+            transition: right 0.5s;
+            &.active{
+                left: 100%;
+                right: 100%;
+                transform: scale(0);
+                transition: right 0.5s;
+            }
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            left: 15%;
+            right: 15%;
+            top: 20%;
+            height: 3%;
+            transition: all 0.5s;
+            background: black;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            left: 15%;
+            right: 15%;
+            bottom: 20%;
+            height: 3%;
+            transition: all 0.5s;
+            background: black;
+        }
+        &.active{
+            &::after{
+                content: "";
+                position: absolute;
+                left: 5%;
+                right: 5%;
+                top: 45%;
+                height: 3%;
+                transform: rotate(405deg);
+                transition: all 0.5s;
+                background: black;
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                left: 5%;
+                right: 5%;
+                bottom: 50%;
+                height: 3%;
+                transform: rotate(-405deg);
+                transition: all 0.5s;
+                background: black;
+            }
+        }
+    }
+    
+    h1{
+        overflow: hidden;
+
+        .logo{
+            display: block;
+            background-image: url(../img/AEllySister2.svg);
+            background-repeat: no-repeat;
+            width: 200px;
+            height: 100%;
+            text-indent: 101%;
+            white-space: nowrap;
+            background-position: center center;
+            &:active{
+               filter: drop-shadow(1px 1px 1px gray); 
+            }
+            @include pc{
+                width: 200px;
+                height: 100%;
+                background-size: 100%;
+                margin-left: 20px;
+                @include pc{
+                    &:hover{
+                        filter: drop-shadow(1px 1px 1px black);
+                    }
+                }
+            }
+        }
+    }
+}
+.mobile-pc-meun{
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba($color: white, $alpha: 0.9);
+    height:100vh;
+    display: none;
+    overflow-y: scroll;
+    padding-bottom: 15%;
+    @include pc{
+        width: 60%;
+        position: relative;
+        display: block;
+        height: auto;
+        padding: 0;
+        overflow-y:visible;
+        background: none;
+    }
+    &.active{
+        display: block;
+        z-index: 9999;
+    }
+    .menu-father-wrap{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        @include pc{
+            flex-direction: row;
+        }
+        .menu-father-inner{
+            @include pc{
+                width: 33%;
+                position: relative;
+                padding: 15px 0;
+                cursor: pointer;
+                &:hover{
+                    box-shadow: (1px 1px 5px black);
+                }
+                
+            }
+            h3{
+                font-family: $motif-ff3;
+                margin: 20px 0;
+                font-weight: bold;
+                font-size: 28px;
+                @include pc{
+                    position: relative;
+                    width: 100%;
+                    font-size: 30px;
+                    &:active{
+                        filter: drop-shadow(1px 1px 1px black);
+                    }
+                }
+            }
+            .menu-child-wrap{
+                overflow-y: scroll;
+                @include pc{
+                    overflow: auto;
+                    z-index: 9999;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    right: 0;
+                    background: white;
+                    display: none;
+                }
+            }
+            .menu-child-wrap li a{
+                text-decoration: none;
+                color: rgb(73, 72, 72);
+                display: block;
+                padding: 15px 0;
+                font-family: $motif-ff2;
+                @include pc{
+                    width: 100%;
+                    position: relative;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        bottom: 15%;
+                        right: 100%;
+                        left: 100%;
+                        background: #000;
+                        transform: scaleX(0);
+                        transition: all 0.5s;
+                        height: 2px;
+                    }
+                    &:hover{
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            bottom: 15%;
+                            right: 25%;
+                            left: 25%;
+                            background: #000;
+                            transform: scaleX(1);
+                            transition: right 0.5s;
+                            height: 2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+body.active,html.active{
+    overflow: hidden;
+}
+
+.menu-search{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 1;
+    &.active{
+        display: block;
+    }
+    .search-input{
+        width: 100%;
+        background: white;
+        border: none;
+        padding:10px;
+        color:blakc;
+        font-family: $motif-ff2;
+        &::placeholder{
+            color: gray;
+
+        }
+        &:focus{
+          outline: none;
+        }
+    }
+}

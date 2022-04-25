@@ -1,0 +1,157 @@
+.footer{
+    width: 100%;
+    padding:40px 5px;
+    background: $motif-color1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(25, 25, 73);
+    font-family: $motif-ff2;
+    font-size: 14px;
+    .other-link{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        @include pc{
+            align-items: center;
+            justify-content: space-around;
+            
+        }
+    }
+    a{
+        text-decoration: none;
+        color: rgb(25, 25, 73);
+        display: block;
+        transition: all 0.1s;
+        transform: scale(1); 
+        &:active{
+            color:$motif-color2-active;
+        }
+        @include pc{
+            margin-left: 20px;
+            &:active{
+            color: $motif-color2-active;
+            }
+        }
+        i{
+            font-size: 16px;
+            margin-right: 5px;
+            @include pc{
+                &:hover{
+                    transition: all 0.1s;
+                    transform: scale(1); 
+                }
+                font-size: $motif-fz2;
+            }
+        }
+    }
+    .other-introduce{
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        a{
+            margin: 0;
+            display: inline;
+            @include pc{
+                &:hover{
+                    color:blue;
+                }
+            }
+        }
+        p{
+            margin-top: 10px;
+        }
+    }
+}
+
+.instagram-link,.facebook-link,.line-link{
+    display: block;
+    @include pc{
+        display: none !important;
+    }
+}
+
+.instagram-link{
+    &:hover{
+        color:rgb(131, 58, 180);    
+    }
+}
+.facebook-link{
+    &:hover{
+        color: rgb(81, 106, 216);
+    }
+}
+
+.line-link{
+    &:hover{
+        color:rgb(0,180,0) ;
+    }
+}
+.fb-page{
+    display: none;
+    @include pc{
+        display: block !important;
+    }
+}
+
+.line-page,.instagram-page{
+    display: none;
+    @include pc{
+        display: inline !important;
+        width:40%;
+        height: auto;
+    }
+}
+
+.fb-page-wrap,.line-page-wrap,.ig-page-wrap{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    text-align: center;
+    @include pc{
+        display: block !important;
+    }
+    p{
+        margin-bottom: 10px;
+        font-size: $motif-fz1;
+    }
+    img{
+        width: 140px;
+        height: 140px;
+    }
+}
+
+// .fb.page-wrap{
+//     justify-self: stretch;
+// }
+.line-page-inner,.instagram-page-inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    .line-page-liaison,.instagerm-page-liaison{
+        border: 1px $c-color-darkblue solid;
+        border-radius: 10px;
+        text-align: left;
+        width: 100%;
+        overflow: hidden;
+        i{
+            display: inline-block;
+            font-size: 20px;
+            background:$c-color-darkblue;
+            color: white;
+            width: 20%;
+            text-align: center;
+            padding: 5px 0;
+        }
+        span{
+            display: inline-block;
+            font-size: $motif-fz1;
+            text-align: center;
+            width: 70%;
+        }
+    }
+}

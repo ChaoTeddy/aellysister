@@ -1,0 +1,157 @@
+.lookbook-wrap{
+    padding: 70px 10px;
+    background-image: linear-gradient(to bottom right,rgb(100, 94, 94) 60%,#fff 40%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include pc{
+        padding-top: 90px;
+        padding-left:0;
+        padding-bottom: 0;
+        padding-right: 0;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+
+.lookbook-1,.lookbook-2,.lookbook-3,.lookbook-4{
+    display: flex;
+    font-display: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    height: 60vh;
+    @include pc{
+        height: auto;
+    }
+}
+.lookbook-img{
+    align-self: stretch;
+    max-width: 50%;
+    @include pc{
+        width: 70%;
+    }
+    .pc-lookbook-img{
+        height: 100%;
+        object-fit: contain;        
+        @include pc{
+            object-fit: cover;
+            &:hover +.shop-link{
+                transform: translate(-35%);
+                transition: all 1s;
+            }
+            &:hover +.shop-link-2{
+                transform: translate(35%);
+                transition: all 1s;
+            }
+        }
+    }
+    .shop-link{
+        display: none;
+        @include pc{
+            position: absolute;
+            top: 35%;
+            bottom: 45%;
+            display: block;
+            background: black;
+            text-align: right;
+            height:150px;
+            padding-top: 7%;
+            padding-right: 2%;
+            width: 15%;
+            font-size: $motif-fz2;
+            text-decoration: none;
+            color: white;
+            font-family: $motif-ff2;
+            opacity: 0.9;
+            transform: translateX(-100%);
+            transition: all 1s;
+            z-index: 0;
+            &:hover{
+                font-size: $motif-fz2*1.1;
+                transform: translate(-35%);
+                color: $motif-color1;
+                transition: all 0.5s;
+            }
+        }
+    }
+    .shop-link-2{
+        display: none;
+        @include pc{
+            position: absolute;
+            top: 35%;
+            bottom: 45%;
+            right: 0;
+            display: block;
+            background: black;
+            text-align: left;
+            height:150px;
+            padding-top: 7%;
+            padding-left: 2%;
+            width: 15%;
+            font-size: $motif-fz2;
+            text-decoration: none;
+            color: white;
+            font-family: $motif-ff2;
+            opacity: 0.9;
+            transform: translateX(100%);
+            transition: all 1s;
+            &:hover{
+                font-size: $motif-fz2*1.1;
+                transform: translateX(35%);
+                color: $motif-color1;
+                transition: all 0.5s;
+            }
+        }
+    }
+    .pc-lookbook-link{
+        position: relative;
+        width: 100%;
+        height: 100%;        
+        overflow: hidden;
+    }
+}
+.lookbook-2,.lookbook-4{
+    flex-direction: row-reverse;
+
+
+}
+
+
+.lookbook-inner{
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-family: $motif-ff2;
+    max-width: 40%;
+    line-height: $motif-fz1;
+    @include pc{
+        font-size: $motif-fz2;
+        line-height: $motif-fz2*1.5;
+        max-width: 40%;
+        padding: 100px;
+    }
+    h3{
+        font-size: $motif-fz1;
+        position: relative;
+        margin-bottom: 10px;
+        &::before{
+            content: "";
+            background: gray;
+            height: 1px;
+            position: absolute;
+            bottom: -40%;
+            left: 10%;
+            right: 10%;
+            @include pc{
+                bottom: -60%;
+            }
+        }
+        @include pc{
+            font-size: $motif-fz1*2;
+            margin-bottom: 30px;
+        }
+    }
+}
+

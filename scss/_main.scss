@@ -1,0 +1,100 @@
+$motif-color1:#D2D6EF;
+$motif-color2-active:rgb(56, 86, 150);
+$motif-ff1:Bungee;
+$motif-ff2:Adobe 繁黑體 Std;
+$motif-ff3:Agency FB;
+$motif-ff4:Noto Sans TC;
+$motif-ff5:Tangerine;
+$motif-fz1:18px;
+$motif-fz2:22px;
+
+$commodity-border:rgb(218, 207, 207);
+
+// commodity
+$c-color-black:black;
+$c-color-white:white;
+$c-color-red:red;
+$c-color-blue:blue;
+$c-color-gray:gray;
+$c-color-darkblue:rgb(36, 36, 82);
+$c-color-darkpink:rgb(179, 123, 133);
+$c-color-shallow-khaki:rgb(240, 209, 163);
+$c-color-khaki:rgb(194, 154, 95);
+$c-color-dark-khaki:rgb(219, 156, 62);
+$c-color-brown:rgb(131, 63, 43);
+$c-color-beige:beige;
+
+.c-color-black{
+    background: $c-color-black;
+}
+.c-color-white{
+    background:$c-color-white;
+}
+.c-color-red{
+   background: $c-color-red;
+}
+.c-color-blue{
+    background: $c-color-blue;
+}
+.c-color-gray{
+    background: $c-color-gray;
+}
+.c-color-darkblue{
+    background: $c-color-darkblue;
+}
+.c-color-darkpink{
+    background: $c-color-darkpink;
+}
+.c-color-shallow-khaki{
+    background: $c-color-shallow-khaki;
+}
+.c-color-khaki{
+    background: $c-color-khaki;
+}
+.c-color-dark-khaki{
+    background: $c-color-dark-khaki;
+}
+.c-color-brown{
+    background: $c-color-brown;
+}
+.c-color-beige{
+    background: $c-color-beige;
+}
+
+
+// 禁用href
+.disabled-href{
+    pointer-events: none;
+}
+
+// animate 未啟用
+// .animate-d01{
+//     animation-delay: 0.1s;
+// }
+// .animate-d02{
+//     animation-delay: 0.2s;
+// }
+// .animate-d03{
+//     animation-delay: 0.3s;
+// }
+// .animate-d04{
+//     animation-delay: 0.4s;
+// }
+// .animate-d05{
+//     animation-delay: 0.5s;
+// }
+// .animate-d1{
+//     animation-delay: 1s;
+// }
+// .animate-d2{
+//     animation-delay: 2s;
+// }
+// .animate-d3{
+//     animation-delay: 3s;
+// }
+// .animate-d4{
+//     animation-delay: 4s;
+// }
+// .animate-d5{
+//     animation-delay: 5s;
+// }

@@ -1,0 +1,24 @@
+.menu-box {
+  width: 35px;
+  height: 35px;
+  position: relative;
+}
+
+.menu-box .menu-border {
+  border-top: 1px black solid;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+}
+
+.menu-box::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 1px;
+  background: black;
+}
+/*# sourceMappingURL=layout.css.map */

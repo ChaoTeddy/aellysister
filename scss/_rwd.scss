@@ -1,0 +1,18 @@
+img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+@mixin ipad-pro {
+    @media (min-width:428px) {
+        @content
+    }
+}
+@mixin pc {
+    @media (min-width:1024px) {
+        @content
+    }
+}

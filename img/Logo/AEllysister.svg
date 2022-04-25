@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="117" height="34" viewBox="0 0 117 34">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #000;
+        font-size: 30px;
+        font-family: Tangerine-Bold, Tangerine;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+      }
+
+      .cls-2 {
+        letter-spacing: -0.1em;
+      }
+    </style>
+  </defs>
+  <text id="AElly_sister" data-name="AElly sister" class="cls-1" transform="translate(1 1)"><tspan x="3.425" y="23">AElly</tspan><tspan class="cls-2" y="23"> </tspan><tspan y="23">sister</tspan></text>
+</svg>

@@ -1,0 +1,124 @@
+.origin-content{
+    padding: 60px 10px;
+    @include pc{
+        padding: 90px 0;
+        position: relative;
+    }
+}
+
+
+.icon-title{
+    padding: 30px 0;
+    font-size: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-family: $motif-ff3;
+    color: black;
+    h2{
+        margin-left: 10px;
+        font-size: 30px;
+        color: black;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        bottom: 0;
+        height: 1px;
+        background: $motif-color1;
+    }
+}
+
+.origin-introduce{
+    font-family: $motif-ff2;
+    line-height: 24px;
+    margin-top: 20px;
+    @include pc{
+        font-size: $motif-fz1;
+        text-align: center;
+    }
+}
+.onlinetime-wrap{
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    background: linear-gradient(to bottom,white,$motif-color1);
+    color: black;
+    .onlinetime-title{
+        font-size: $motif-fz2;
+        font-weight: bold;
+    }
+    .onlinetime-title-english{
+        margin-top: 10px;
+        font-size: $motif-fz1;
+        font-family: $motif-ff2;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            top:55%;
+            left: 10%;
+            width: 20%;
+            background: black;
+            height: 1px;
+            @include ipad-pro{
+                left: 15%;
+                width: 20%;
+            }
+            @include pc{
+                left: 35%;
+                width: 10%;
+            }
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            top:55%;
+            right: 10%;
+            width: 20%;
+            background: black;
+            height: 1px;
+            @include ipad-pro{
+                right:15%;
+                width: 20%;
+            }
+            @include pc{
+                right:35%;
+                width: 10%;
+            }
+        }
+    }
+    .onlinetime-inner{
+        margin-top: 10%;
+        font-family: $motif-ff3;
+        font-size: 16px;
+        font-weight: bold;
+        @include pc{
+            margin-top: 50px;
+        }
+    }
+    .onlinetime-inner-time{
+        margin-top: 5px;
+        font-weight: bold;
+        font-family: $motif-ff3;
+    }
+}
+
+.about-1-wrap{
+    margin-top: 20px;
+    text-align: center;
+    @include pc{
+        img{
+            width: 60%;
+        }
+    }
+    p{
+        margin-top: 50px;
+        font-family: $motif-ff3;
+        font-weight: bold;
+        font-size: $motif-fz2;
+        // color: darkgray;
+    }
+}
