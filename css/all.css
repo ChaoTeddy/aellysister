@@ -960,9 +960,10 @@ body.active, html.active {
 }
 
 .origin-introduce {
-  font-family: "微軟正黑體";
+  font-family: Adobe 繁黑體 Std;
   line-height: 24px;
   margin-top: 20px;
+  font-weight: bold;
 }
 
 @media (min-width: 1024px) {
@@ -982,13 +983,13 @@ body.active, html.active {
 }
 
 .onlinetime-wrap .onlinetime-title {
-  font-size: "微軟正黑體";
+  font-size: Adobe 繁黑體 Std;
 }
 
 .onlinetime-wrap .onlinetime-title-english {
   margin-top: 10px;
   font-size: 18px;
-  font-family: "微軟正黑體";
+  font-family: Adobe 繁黑體 Std;
   position: relative;
   font-weight: bold;
 }
@@ -1043,7 +1044,7 @@ body.active, html.active {
 
 .onlinetime-wrap .onlinetime-inner {
   margin-top: 10%;
-  font-family: "微軟正黑體";
+  font-family: Adobe 繁黑體 Std;
   font-size: 16px;
   font-weight: bold;
 }
@@ -1064,7 +1065,7 @@ body.active, html.active {
 .onlinetime-wrap .onlinetime-inner-time {
   margin-top: 5px;
   font-weight: bold;
-  font-family: "微軟正黑體";
+  font-family: Adobe 繁黑體 Std;
 }
 
 @media (min-width: 428px) {
@@ -1092,7 +1093,7 @@ body.active, html.active {
 
 .about-1-wrap p {
   margin-top: 50px;
-  font-family: "微軟正黑體";
+  font-family: Adobe 繁黑體 Std;
   font-weight: bold;
   font-size: 22px;
 }
@@ -2113,8 +2114,8 @@ body.active, html.active {
     display: block;
     font-size: 16px;
     text-decoration: none;
-    color: black;
-    font-family: Agency FB;
+    color: #2b2929;
+    font-family: Adobe 繁黑體 Std;
   }
   .store-child-wrap li a:hover {
     color: #385696;
