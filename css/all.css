@@ -264,9 +264,10 @@ img {
 
 .menubar-box h1 .logo {
   display: block;
-  background-image: url(../img/AEllySister2.svg);
+  background-image: url(../img/Logo/AellysisterLogo1.svg);
+  background-size: 100%;
   background-repeat: no-repeat;
-  width: 200px;
+  width: 165px;
   height: 100%;
   text-indent: 101%;
   white-space: nowrap;
@@ -280,7 +281,7 @@ img {
 
 @media (min-width: 1024px) {
   .menubar-box h1 .logo {
-    width: 200px;
+    width: 280px;
     height: 100%;
     background-size: 100%;
     margin-left: 20px;
@@ -456,7 +457,6 @@ body.active, html.active {
   background: white;
   border: none;
   padding: 10px;
-  color: blakc;
   font-family: Adobe 繁黑體 Std;
 }
 
@@ -1840,6 +1840,12 @@ body.active, html.active {
   color: white;
 }
 
+.pc-store-wrap {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 60px;
+}
+
 @media (min-width: 1024px) {
   .pc-store-wrap {
     border-right: 1px #e2dbdb solid;
@@ -1848,7 +1854,7 @@ body.active, html.active {
     position: sticky;
     left: 0;
     width: 20%;
-    top: 10%;
+    top: 12%;
     height: 80vh;
     overflow-y: scroll;
   }
@@ -1860,6 +1866,7 @@ body.active, html.active {
   display: flex;
   overflow: auto;
   border-bottom: 1px #dacfcf solid;
+  background: white;
 }
 
 @media (min-width: 428px) {
@@ -1882,7 +1889,7 @@ body.active, html.active {
 }
 
 .store-menu-wrap .store-first {
-  background: #fcfcfc;
+  width: 100%;
 }
 
 @media (min-width: 1024px) {
