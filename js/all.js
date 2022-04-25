@@ -22,11 +22,34 @@ $(document).ready(function () {
         $('.menubar-search-box').removeClass('active');
     });
 
-    $('.menu-father-inner').click(function (e) { 
-        // e.preventDefault();
-        $(this).find('.menu-child-wrap').slideToggle();
-        $(this).siblings().find('.menu-child-wrap').slideUp();
-    });
+    /* menu原版 li */
+    // $('.menu-father-inner').click(function (e) { 
+    //     // e.preventDefault();
+    //     $(this).find('.menu-child-wrap').slideToggle();
+    //     $(this).siblings().find('.menu-child-wrap').slideUp();
+    // });
+
+
+
+    /* menu修正版 h3 */
+    // $('.menu-father-inner h3').click(function (e) { 
+    //     e.preventDefault();
+    //     $(this).siblings('.menu-child-wrap').slideToggle();
+    //     $(this).parent().siblings().find('.menu-child-wrap').slideUp();
+    // });
+
+    /* menu hover版 */
+    $('.menu-father-inner').hover(function () {
+            // over
+            $(this).find('.menu-child-wrap').stop(true, false).slideDown();
+        }, function () {
+            // out
+            $(this).find('.menu-child-wrap').stop(true, false).slideUp();
+            // $(this).parent().siblings().find('.menu-child-wrap').slideUp();
+        }
+    );
+
+
 
 
 
