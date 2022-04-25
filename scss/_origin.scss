@@ -32,9 +32,10 @@
 }
 
 .origin-introduce{
-    font-family: "微軟正黑體";
+    font-family: $motif-ff2;
     line-height: 24px;
     margin-top: 20px;
+    font-weight: bold;
     @include pc{
         font-size: $motif-fz1;
         text-align: center;
@@ -47,12 +48,12 @@
     background: linear-gradient(to bottom,white,$motif-color1);
     color: black;
     .onlinetime-title{
-        font-size: "微軟正黑體";
+        font-size: $motif-ff2;
     }
     .onlinetime-title-english{
         margin-top: 10px;
         font-size: $motif-fz1;
-        font-family: "微軟正黑體";
+        font-family: $motif-ff2;
         position: relative;
         font-weight: bold;
         &::before{
@@ -92,7 +93,7 @@
     }
     .onlinetime-inner{
         margin-top: 10%;
-        font-family: "微軟正黑體";
+        font-family: $motif-ff2;
         font-size: 16px;
         font-weight: bold;
         @include ipad-pro{
@@ -106,7 +107,7 @@
     .onlinetime-inner-time{
         margin-top: 5px;
         font-weight: bold;
-        font-family: "微軟正黑體";
+        font-family: $motif-ff2;
         @include ipad-pro{
             font-size: 18px;
         }
@@ -126,7 +127,7 @@
     }
     p{
         margin-top: 50px;
-        font-family: "微軟正黑體";
+        font-family: $motif-ff2;
         font-weight: bold;
         font-size: $motif-fz2;
         // color: darkgray;
